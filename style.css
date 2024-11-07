@@ -1,0 +1,86 @@
+body {
+    background-color: #f8f9fa;
+}
+.main_grid_1 {
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    /* Combined row and column gap for simpler spacing */
+    border: 5px solid black;
+    /* align-content: center; */
+    /* Controls vertical alignment of grid within container */
+}
+.row{
+
+    display:flex;
+    flex-direction: column;
+    height:370px;
+    width:410px;
+    /* border:1px solid blue; */
+    overflow: hidden;
+    /* justify-content:center; */
+    align-items:center;
+    /* justify-items: center; */
+    /* position: relative; */
+    background: linear-gradient( 35deg,rgb(230, 215, 84),rgb(245, 148, 4));
+    border-top-right-radius:200px;
+    border-top-left-radius: 200px;
+}
+.image{
+    display:flex;
+    max-width:110px;
+    height:120px;
+    justify-content: center;
+    /* z-index:1; */
+    /* position: absolute; */
+    /* border:2px solid green; */
+    /* left:1rem;
+    top:1rem; */
+}
+.image img
+{
+    /* padding-top:5rem;
+    padding-left: 15rem; */
+    max-height:8rem;
+    align-self: center;
+}
+.name{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.name h3{
+    align-self:center;
+    font-weight: bold;
+}
+.name span{
+    align-self: center;
+}
+.desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border:2px solid red; */
+    width: 200px;
+    /* font-weight: bold; */
+
+}
+.price{
+    align-self:left;
+    font-weight: bold;
+
+    /* border:2px solid grey */
+}
+button{
+    margin-top: 16px;
+    background-color: #d35858;
+        color: #e9a6cd;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 16px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+}
