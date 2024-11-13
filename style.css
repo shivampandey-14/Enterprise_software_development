@@ -1,28 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.head {
+    background-color: #eedfdf;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 40px;
+    color: #333;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, black, transparent);
+}
+#logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: flex;
+    color: red;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border: none;
+}
+
+.background_img {
+    background-image: url('https://www.foodiesfeed.com/wp-content/uploads/2023/08/grilled-crispy-pork-with-rice.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    top: 0px;
+    position: relative;
+}
+.pitchbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 45vh 0px 0px 15vh;
+    color: white;
+    text-align: left;
+}
+.pitchcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.5); /* Added background for better readability */
+    height: 100%; /* Ensure it takes full height of the container */
+}
+.browsebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #d35858;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.browsebtn:hover {
+    background-color: #b34747;
+    transform: scale(1.05);
+}
+
+.browsebtn:active {
+    background-color: #a04040;
+    transform: scale(1);
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.button:hover {
+    background-color: #b34747;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #a04040;
+    transform: scale(1);
+}
+ul{
+    display:flex;
+    color:black;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+}
+li{
+    display:flex;
+    justify-content: space-around;
+    color:rgb(251, 14, 14);
+    padding-left:10px;
+    padding-right:10px;
+}
+
 body {
     background-color: #f8f9fa;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 20px;
+    background: linear-gradient(35deg, rgb(230, 215, 84), rgb(245, 148, 4));
 }
 .main_grid_1 {
     display: grid;
     grid-template-rows: 400px 400px;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    /* Combined row and column gap for simpler spacing */
-    border: 5px solid black;
-    /* align-content: center; */
-    /* Controls vertical alignment of grid within container */
 }
 .row{
-
     display:flex;
     flex-direction: column;
     height:370px;
     width:410px;
-    /* border:1px solid blue; */
     overflow: hidden;
-    /* justify-content:center; */
     align-items:center;
-    /* justify-items: center; */
-    /* position: relative; */
     background: linear-gradient( 35deg,rgb(230, 215, 84),rgb(245, 148, 4));
     border-top-right-radius:200px;
     border-top-left-radius: 200px;
@@ -32,16 +165,12 @@ body {
     max-width:110px;
     height:120px;
     justify-content: center;
-    /* z-index:1; */
-    /* position: absolute; */
-    /* border:2px solid green; */
-    /* left:1rem;
-    top:1rem; */
 }
 .image img
 {
-    /* padding-top:5rem;
-    padding-left: 15rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     max-height:8rem;
     align-self: center;
 }
@@ -49,7 +178,6 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 2px solid red; */
 }
 .name h3{
     align-self:center;
@@ -62,25 +190,27 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* border:2px solid red; */
     width: 200px;
-    /* font-weight: bold; */
-
 }
 .price{
     align-self:left;
     font-weight: bold;
-
-    /* border:2px solid grey */
 }
 button{
     margin-top: 16px;
     background-color: #d35858;
-        color: #e9a6cd;
-        border: none;
-        border-radius: 4px;
-        padding: 8px 16px;
-        font-size: 14px;
-        cursor: pointer;
-        transition: background-color 0.3s;
+    color: #e9a6cd;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background:linear-gradient(35deg, rgb(230, 215, 84), rgb(245, 148, 4));
 }

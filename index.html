@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Listing</title>
     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css" />
+    
+    <nav>
+      <div class="navbar-brand">
+      <h1 id="logo"> Yummy Tummy</h1>
+      <div class="navbar">
+      <ul>
+        <li><a href="#" style="text-decoration: none; color: inherit; cursor: pointer;"> HOME </a></li>
+        <li><a href="#" style="text-decoration: none; color: inherit; cursor: pointer;"> CART </a></li>
+        <li><a href="#" style="text-decoration: none; color: inherit; cursor: pointer;"> PROFILE </a></li>
+        <li><a href="signup.html" style="text-decoration: none; color: inherit; cursor: pointer;"> LOGIN </a></li>
+      </ul>
+      </div>
+      </div>
+    </nav>
+    <div class ="background_img">
+        <div class="pitchbox">
+          <p class="pitchcontent">
+            It's not a Food it's an Emotion!!<br>
+            The best Delicious food is waiting for you<br>
+          </p>
+          <button class="browsebtn">Browse</button>
+        </div>
+    </div>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">My E-Commerce</a>
-    </nav>
+    <div class="menu">
+      <p><br></p>
+      Order Fresh Food Online
+       <p><br></p>
+    </div>
 
     <div class="main_grid_1">
       <!-- <h1 class="text-center">Our Products</h1> -->
       <div class="row">
         <!-- Sample Product Card -->
         <div class="image">
-          <img src="images/dosa.png" />
+          <!-- <div class="image_sample"> -->
+            <img src="images/dosa.png" />
+          <!-- </div> -->
         </div>
         <div class="name">
           <h3>Masala Dosa</h3>
@@ -26,7 +54,7 @@
             <p class="price">₹80</p>
           </div>
           <span>⭐⭐⭐⭐☆  (4)</span>
-          <button>Add to Cart</button>
+          <button  class="button">Add to Cart</button>
         </div>
         <!-- Duplicate above divfor more products or use a loop if generating dynamically -->
       </div>
@@ -34,16 +62,16 @@
       <div class="row">
         <!-- Sample Product Card -->
          <div class="image">
-          <img src="images/dosa.png" />
+          <img src="images/pizza.png" />
         </div>
         <div class="name">
-          <h3>Masala Dosa</h3>
+          <h3>Pizza</h3>
           <div class="desc">
-            <p >Description of<br> Masala Dosa</p>
+            <p >Description of<br> Pizza</p>
             <p class="price">₹80</p>
           </div>
           <span>⭐⭐⭐⭐☆  (4)</span>
-          <button>Add to Cart</button>
+          <button class="button">Add to Cart</button>
         </div>
         <!-- Duplicate above div for more products or use a loop if generating dynamically -->
       </div>
@@ -51,16 +79,16 @@
       <div class="row">
         <!-- Sample Product Card -->
         <div class="image">
-          <img src="images/dosa.png" />
+          <img src="images/burger.png" />
         </div>
         <div class="name">
-          <h3>Masala Dosa</h3>
+          <h3>Burger</h3>
           <div class="desc">
-            <p >Description of<br> Masala Dosa</p>
+            <p >Description of<br> Burger</p>
             <p class="price">₹80</p>
           </div>
           <span>⭐⭐⭐⭐☆  (4)</span>
-          <button>Add to Cart</button>
+          <button  class="button">Add to Cart</button>
         </div>
         <!-- Duplicate above div for more products or use a loop if generating dynamically -->
       </div>
@@ -68,16 +96,16 @@
       <div class="row">
         <!-- Sample Product Card -->
         <div class="image">
-          <img src="images/dosa.png" />
+          <img src="images/idli.png" />
         </div>
         <div class="name">
-          <h3>Masala Dosa</h3>
+          <h3>Idli</h3>
           <div class="desc">
-            <p >Description of<br> Masala Dosa</p>
+            <p >Description of<br> Idli</p>
             <p class="price">₹80</p>
           </div>
           <span>⭐⭐⭐⭐☆  (4)</span>
-          <button>Add to Cart</button>
+          <button  class="button">Add to Cart</button>
         </div>
         <!-- Duplicate above div for more products or use a loop if generating dynamically -->
       </div>
@@ -85,16 +113,16 @@
       <div class="row">
         <!-- Sample Product Card -->
         <div class="image">
-          <img src="images/dosa.png" />
+          <img src="images/panner.png" />
         </div>
         <div class="name">
-          <h3>Masala Dosa</h3>
+          <h3>Panner Tikka</h3>
           <div class="desc">
-            <p >Description of<br> Masala Dosa</p>
+            <p >Description of<br> Panner Tikka</p>
             <p class="price">₹80</p>
           </div>
           <span>⭐⭐⭐⭐☆  (4)</span>
-          <button>Add to Cart</button>
+          <button  class="button">Add to Cart</button>
         </div>
         <!-- Duplicate above div for more products or use a loop if generating dynamically -->
       </div>
@@ -102,16 +130,16 @@
       <div class="row">
         <!-- Sample Product Card -->
         <div class="image">
-          <img src="images/dosa.png" />
+          <img src="images/protine.png" />
         </div>
         <div class="name">
-          <h3>Masala Dosa</h3>
+          <h3>Prontine Shake</h3>
           <div class="desc">
-            <p >Description of<br> Masala Dosa</p>
+            <p >Description of<br> Protine Shake</p>
             <p class="price">₹80</p>
           </div>
           <span>⭐⭐⭐⭐☆  (4)</span>
-          <button>Add to Cart</button>
+          <button  class="button">Add to Cart</button>
         </div>
         <!-- Duplicate above div for more products or use a loop if generating dynamically -->
       </div>
@@ -119,16 +147,16 @@
       <div class="row">
         <!-- Sample Product Card -->
         <div class="image">
-          <img src="images/dosa.png" />
+          <img src="images/momos.png" />
         </div>
         <div class="name">
-          <h3>Masala Dosa</h3>
+          <h3>Momos</h3>
           <div class="desc">
-            <p >Description of<br> Masala Dosa</p>
+            <p >Description of<br> Momos</p>
             <p class="price">₹80</p>
           </div>
           <span>⭐⭐⭐⭐☆  (4)</span>
-          <button>Add to Cart</button>
+          <button  class="button">Add to Cart</button>
         </div>
         <!-- Duplicate above div for more products or use a loop if generating dynamically -->
       </div>
@@ -136,16 +164,16 @@
       <div class="row">
         <!-- Sample Product Card -->
         <div class="image">
-          <img src="images/dosa.png" />
+          <img src="images/dal.png" />
         </div>
         <div class="name">
-          <h3>Masala Dosa</h3>
+          <h3>Dal</h3>
           <div class="desc">
-            <p >Description of<br> Masala Dosa</p>
+            <p >Description of<br> Dal</p>
             <p class="price">₹80</p>
           </div>
           <span>⭐⭐⭐⭐☆  (4)</span>
-          <button>Add to Cart</button>
+          <button  class="button">Add to Cart</button>
         </div>
 
         <!-- Duplicate above div for more products or use a loop if generating dynamically -->
@@ -154,4 +182,8 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </body>
+  <footer>
+    <div class="footer">
+      <p>Build by <strong>Shivam Pandey MT2024145</strong><p>
+    </div>
 </html>
